@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  color: rgb(255, 116, 35);
+}
+h2 {
+  margin: 0 0 10px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: small;
+}
+
+#write-post,
+#posts {
+  margin-bottom: 20px;
+}
+
+#postForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#postForm input,
+#postForm textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#postForm button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#postList {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.post-title {
+  font-weight: bold;
+}
+
+.post-content {
+  margin-top: 5px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.inner {
+  color: blue;
+  list-style-type: none;
+}
+
+.header_menu_name {
+  color: brown;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size: 9px;
+}
+
+.header_menu_name li {
+  margin-right: 20px;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: right;
+}
+
+.item__contents {
+  display: none;
+  margin-left: 10px;
+}
+
+.material-icons {
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.item__contents.show {
+  display: block; /* 클래스가 추가되면 메뉴를 표시합니다 */
+}
