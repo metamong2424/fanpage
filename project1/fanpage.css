@@ -16,6 +16,11 @@ main {
   padding: 20px;
 }
 
+.contents__menu {
+  background-color: #8f8b8b;
+  padding: 0%;
+}
+
 h1 {
   margin: 0 0 10px;
   color: rgb(255, 116, 35);
@@ -72,24 +77,45 @@ h3 {
   margin-top: 5px;
 }
 
-.delete-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 10px;
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* 버튼을 맨 오른쪽으로 정렬 */
+  margin-top: 10px; /* 버튼과 게시글 사이의 간격 설정 */
 }
 
 .inner {
-  color: blue;
-  list-style-type: none;
+  color: #000000;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  justify-items: start;
+  flex-direction: row;
+  font-size: 10px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.inner > li {
+  margin-right: 20px;
+}
+
+.inner > li > ul {
+  padding-left: 0;
+}
+.inner > li > ul > li {
+  margin-left: 20px;
+}
+
+.inner > li > ul > li > ul {
+  padding-left: 0;
+}
+
+.inner > li > ul > li > ul > li {
+  margin-left: 20px;
 }
 
 .header_menu_name {
-  color: brown;
+  color: rgb(0, 0, 0);
   list-style-type: none;
   display: flex;
   padding: 0;
@@ -109,6 +135,7 @@ h3 {
 .item__contents {
   display: none;
   margin-left: 10px;
+  flex-direction: row;
 }
 
 .material-icons {
@@ -128,4 +155,163 @@ h3 {
 
 .item__contents.show {
   display: block; /* 클래스가 추가되면 메뉴를 표시합니다 */
+}
+
+.barogagi {
+  color: #d80000;
+  list-style-type: none;
+  padding: 4px;
+  display: none;
+  text-align: left;
+  font-size: 9px;
+}
+
+.tip {
+  color: #030f14;
+  list-style-type: none;
+  display: none;
+  padding: 4px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.stadium {
+  color: #ffffff;
+  list-style-type: none;
+  padding: 4px;
+  display: none;
+
+  font-weight: 300;
+  font-size: 9px;
+}
+
+.tip.show {
+  display: block; /* 클래스가 추가되면 메뉴를 표시합니다 */
+}
+.barogagi.show {
+  display: block; /* 클래스가 추가되면 메뉴를 표시합니다 */
+}
+.stadium.show {
+  display: grid; /* 클래스가 추가되면 메뉴를 표시합니다 */
+}
+
+.linkAcss {
+  color: #0b47ca;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkBcss {
+  color: #0b47ca;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkCcss {
+  font-weight: bold;
+  color: #000000;
+  margin-left: 55px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.stadium > li {
+  display: grid;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.team_Name {
+  font-weight: normal;
+}
+
+.team_Stadium {
+  font-weight: bold;
+  color: #000000;
+  margin-left: 55px;
+  text-align: left;
+}
+
+/* 게시글 버튼 수정영역 */
+
+/* 수정 버튼과 삭제 버튼을 독립적으로 스타일링 */
+.post {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: flex-end; /* 버튼을 오른쪽 끝에 정렬 */
+}
+
+.delete-button {
+  background-color: #ec3c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px; /* 삭제 버튼 사이 간격 주기 */
+}
+
+.edit-button {
+  background-color: #60abfc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  right: 150px;
+}
+
+.save-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.edit-title {
+  position: relative;
+  width: 100%;
+}
+
+.edit-content {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.cancel-button {
+  background-color: #c91d1d;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.calender {
+  color: #0b47ca;
 }

@@ -3,50 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>한화덕후 모이자</title>
     <link rel="stylesheet" href="fanpage.css" />
   </head>
   <!--  -->
   <body>
     <header>
-    <div class="header_menu">
+      <div class="header_menu">
         <ul class="header_menu_name">
-            <li>my 팀 한눈에</li>
-            <li>my 팀 설정</li>
+          <li>my 팀 한눈에</li>
+          <li>my 팀 설정</li>
         </ul>
-    </div>
-    <div class="Mainsitename">
-      <h1>한화덕후 모이자</h1>
-
-    </div>
+      </div>
+      <div class="Mainsitename">
+        <h1>한화덕후 모이자</h1>
+      </div>
       <div class="main-menu">
-        <ul class="item">
-          <span class="material-icons" id="hamburguricon">menu
-            </span>
-          <div class="item__contents" id="menuOpen">
-            <div class="contents__menu">
-              <ul class="inner">
-                <ul>
-                  <li>경기일정</li>
-                  <li>자유게시판</li>
-                  <li>야구직관꿀팁</li>
-                <ul>
-                    <li>티켓팅</li>
-                    <ul>
-                        <li>티켓링크 바로가기</li>
-                        <li>인터파크티켓 바로가기</li>
-                      </ul>
+        <span class="material-icons" id="hamburguricon">menu</span>
+        <div class="item__contents" id="menuOpen">
+          <div class="contents__menu">
+            <ul class="inner">
+              <li class="calender">경기일정</li>
+              <li>자유게시판</li>
+              <li id="tipClose">야구직관꿀팁</li>
+              <ul class="tip" id="tipOpen">
+                <li id="barogagiClose">
+                  티켓팅
+                  <ul class="barogagi" id="barogagiOpen">
+                    <li id="linkA"></li>
+                    <li id="linkB"></li>
                   </ul>
-                  <h4>쉬운야구 룰</h4>
-                  <h4>굿즈정보</h4>
-                </ul>
-                </ul>
-            </div>
-            </div>
-            </li>
+                </li>
+                <li id="stadiumClose">
+                  경기장별 꿀팁
+                  <ul class="stadium" id="stadiumOpen">
+                    <li>
+                      <span class="team_Name">한화이글스</span>
+
+                      <span id="linkC"></span>
+                    </li>
+                    <li>
+                      <span class="team_Name">LG트윈스/두산베어스</span>
+                      <span class="team_Stadium">| 잠실야구장</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">키움히어로즈</span>
+
+                      <span class="team_Stadium">| 고척스카이돔</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">SSG랜더스</span>
+                      <span class="team_Stadium">| 인천SSG랜더스필드</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">KT위즈</span>
+                      <span class="team_Stadium">| 수원KT위즈파크</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">삼성라이온즈</span>
+                      <span class="team_Stadium">| 대구삼성라이온즈파크</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">기아타이거즈</span>
+                      <span class="team_Stadium">| 광주기아챔프언스필드</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">롯데자이언츠</span>
+                      <span class="team_Stadium">| 사직야구장</span>
+                    </li>
+                    <li>
+                      <span class="team_Name">NC다이노스</span>
+                      <span class="team_Stadium">| 창원NC파크</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <li>쉬운야구 룰</li>
+              <li>굿즈정보</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
+
     <main>
       <section id="write-post">
         <h2>새 글 작성</h2>
@@ -62,7 +105,7 @@
       </section>
     </main>
     <footer>
-      <p> 2024 최강한화, 불꽃이글스</p>
+      <p>2024 최강한화, 불꽃이글스</p>
     </footer>
     <script src="fanpage.js"></script>
   </body>
